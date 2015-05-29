@@ -1,0 +1,29 @@
+/* Effective stylesheet produced by snapshot save */
+body { background: none repeat scroll 0px 0px rgb(221, 221, 221); border: 1px solid rgb(0, 0, 0); margin: 0px; padding: 2em; color: rgb(0, 0, 0); font: 16px/1.5 Optima,Segoe,"Segoe UI",Candara,Calibri,Georgia,Verdana,Arial,sans-serif; }
+div#content { border: 1px solid rgb(187, 187, 187); background: none repeat scroll 0% 0% rgb(255, 255, 255); margin: 0px; padding: 2em; }
+a { color: rgb(17, 51, 153); text-decoration: none; padding: 1px; }
+a:hover { color: rgb(153, 0, 0); }
+h1 { background: none repeat scroll 0px 0px rgb(51, 102, 153); color: rgb(255, 255, 255); font-family: "BitStream Vera Sans",Verdana; font-size: 200%; font-weight: bold; letter-spacing: 0.1em; margin: -1em -1em 0.2em; padding: 0.75em 1em; }
+h2 { font-size: 2em; border-bottom: 1px solid rgb(204, 204, 204); margin-top: 1.2em; }
+h3 { font-size: 1.6em; border-bottom: 1px solid rgb(238, 238, 238); margin-top: 1em; }
+h4 { font-size: 1.4em; border-bottom: 1px solid rgb(238, 238, 238); margin-top: 1em; }
+h1, h2, h3, h4, h5, h6 {  }
+pre { border: 1px solid rgb(204, 204, 204); background: none repeat scroll 0% 0% rgb(238, 238, 238); padding: 0.5em; overflow: auto; }
+div#postamble { text-align: left; color: rgb(136, 136, 136); font-size: 80%; padding: 0px; margin: 0px; }
+table { font-size: 100%; border-collapse: collapse; margin: 0.5em 0px; }
+th, td { border: 1px solid rgb(119, 119, 119); padding: 0.3em; margin: 2px; }
+th { background: none repeat scroll 0% 0% rgb(238, 238, 238); }
+.title { text-align: center; }
+.todo { color: red; }
+.timestamp { color: gray; }
+pre { border: 1pt solid rgb(174, 189, 204); background-color: rgb(243, 245, 247); padding: 5pt; font-family: courier,monospace; }
+table { border-collapse: collapse; }
+td, th { vertical-align: top; }
+#toc { font-size: 12px; margin-left: -3%; }
+.tocify { border: 0px none; border-radius: 0px; }
+div#content { margin-left: -6%; margin-right: -2%; }
+div#postamble { margin-left: -6%; margin-right: -2%; }
+p { margin-top: 0.8em; }
+li { margin-top: 0.2em; }
+blockquote { margin: 20px 0px; }
+blockquote p { font-size: 16px; }

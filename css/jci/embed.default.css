@@ -1,0 +1,97 @@
+/* Effective stylesheet produced by snapshot save */
+#ds-reset { font-weight: normal; font-size: 13px; font-size-adjust: none; color: rgb(51, 51, 51); line-height: 1; text-align: left; }
+#ds-reset * { box-sizing: content-box; }
+#ds-reset input[type="button"], #ds-reset input[type="submit"], #ds-reset input[type="reset"], #ds-reset button { box-sizing: border-box; }
+#ds-reset div, #ds-reset ul, #ds-reset ol, #ds-reset li, #ds-reset ul li, #ds-reset ol li, #ds-reset iframe, #ds-reset h1, #ds-reset h2, #ds-reset h3, #ds-reset h4, #ds-reset h5, #ds-reset h6, #ds-reset p, #ds-reset img, #ds-reset blockquote, #ds-reset a, #ds-reset span, #ds-reset pre, #ds-reset code, #ds-reset strong, #ds-reset sub, #ds-reset sup, #ds-reset fieldset, #ds-reset form, #ds-reset label, #ds-reset input, #ds-reset textarea, #ds-reset select { border: 0px none; padding: 0px; margin: 0px; vertical-align: baseline; font: inherit; background: none repeat scroll 0% 0% transparent; width: auto; float: none; overflow: visible; transition: none 0s ease 0s ; }
+#ds-reset p { text-indent: 0px; clear: none; }
+#ds-reset span, #ds-reset strong, #ds-reset label, #ds-reset input { display: inline; margin: 0px; }
+#ds-reset textarea:focus, #ds-reset input:focus { outline: medium none; }
+#ds-reset ul, #ds-reset ol, #ds-reset ul li, #ds-reset ol li { list-style: none outside none; display: block; }
+#ds-reset input, #ds-reset button { border-radius: 3px; }
+#ds-reset {  }
+#ds-reset .ds-rounded { border-radius: 3px; }
+#ds-reset .ds-rounded-top { border-top-left-radius: 3px; border-top-right-radius: 3px; }
+#ds-reset .ds-gradient-bg { background: url("bg_sprites.png") repeat-x scroll 0px -60px transparent; }
+#ds-reset .ds-avatar { box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75); position: relative; border-radius: 3px; background-color: rgb(255, 255, 255); float: left; }
+#ds-reset .ds-avatar img { display: block; width: 50px; height: 50px; max-width: none; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.22); border-radius: 3px; }
+#ds-reset .ds-icon { vertical-align: middle; display: inline-block; overflow: hidden; background: url("sprites.png") no-repeat scroll 0% 0% transparent; }
+#ds-reset a .ds-icon { opacity: 0.6; transition: opacity 0.15s linear 0s; }
+#ds-reset a:hover .ds-icon { opacity: 1; }
+#ds-reset .ds-service-list a { vertical-align: middle; padding-right: 3px; }
+#ds-reset .ds-service-list li:hover a { color: rgb(51, 51, 51); }
+#ds-reset .ds-service-link { height: 16px ! important; line-height: 16px; padding-left: 20px; display: block; background: url("service-icons-color.png") no-repeat scroll 0% 0% transparent; overflow: hidden; }
+#ds-reset .ds-weibo { background-position: 0px 0px; }
+#ds-reset .ds-sohu { background-position: 0px -16px; }
+#ds-reset .ds-renren { background-position: 0px -32px; }
+#ds-reset .ds-netease { background-position: 0px -48px; }
+#ds-reset .ds-kaixin { background-position: 0px -80px; }
+#ds-reset .ds-douban { background-position: 0px -96px; }
+#ds-reset .ds-qq { background-position: 0px -192px; }
+#ds-reset .ds-baidu { background-position: 0px -208px; }
+#ds-reset .ds-google { background-position: 0px -240px; }
+#ds-reset {  }
+#ds-thread { clear: both; position: relative; overflow: visible; }
+#ds-thread #ds-reset {  }
+#ds-thread #ds-reset a { cursor: pointer; text-decoration: none; color: rgb(119, 119, 119); background-color: transparent; transition: color 0.15s linear 0s; }
+#ds-thread #ds-reset a:hover { color: rgb(51, 51, 51); }
+#ds-thread #ds-reset ul, #ds-thread #ds-reset ul li { background: none repeat scroll 0% 0% transparent; margin: 0px; padding: 0px; }
+#ds-thread #ds-reset button { cursor: pointer; margin: 0px; padding: 0px; border-radius: 0px; }
+#ds-thread #ds-reset .ds-meta { position: relative; padding: 8px 0px; line-height: 24px; border-bottom: 1px solid rgba(0, 0, 0, 0.13); }
+#ds-thread #ds-reset a.ds-like-thread-button { color: rgb(85, 85, 85); padding: 4px 8px; border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(170, 170, 170); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; box-shadow: 0px 0px 1px rgb(255, 255, 255) inset; margin-right: 15px; text-shadow: 0px 1px 0px rgb(255, 255, 255); background-color: rgb(224, 224, 224); background-repeat: no-repeat; background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255) 25%, rgb(224, 224, 224)); }
+#ds-thread #ds-reset a.ds-like-thread-button .ds-icon-heart { position: relative; top: -2px; opacity: 1; }
+#ds-thread #ds-reset a.ds-like-thread-button span { color: rgb(85, 85, 85); }
+#ds-thread #ds-reset .ds-thread-cancel-like { display: none; }
+#ds-thread #ds-reset .ds-login-buttons { width: 100%; position: relative; padding: 10px 0px 6px; }
+#ds-thread #ds-reset .ds-login-buttons p { float: left; line-height: 24px; margin: 0px; }
+#ds-thread #ds-reset .ds-login-buttons .ds-service-list li { float: left; height: 16px; width: 54px; padding: 4px 0px; margin: 0px 0px 0px 6px; }
+#ds-thread #ds-reset .ds-login-buttons .ds-more-services { color: rgb(221, 51, 34) ! important; line-height: 16px; display: block; }
+#ds-thread #ds-reset .ds-login-buttons .ds-more-services:hover { color: rgb(231, 112, 100) ! important; }
+#ds-thread #ds-reset .ds-login-buttons .ds-additional-services { display: none; }
+#ds-thread #ds-reset .ds-login-buttons .ds-social-links { float: left; width: 306px; }
+#ds-thread #ds-reset .ds-login-buttons:after { content: "."; display: block; height: 0px; clear: both; visibility: hidden; }
+#ds-thread #ds-reset .ds-replybox { width: auto; font-size: 12px; z-index: 3; margin: 8px 0px; padding: 0px 0px 0px 60px; position: relative; }
+#ds-thread #ds-reset .ds-replybox:after { content: "."; display: block; height: 0px; clear: both; visibility: hidden; }
+#ds-thread #ds-reset .ds-replybox .ds-avatar { position: absolute; top: 0px; left: 0px; }
+#ds-thread #ds-reset .ds-replybox .ds-avatar img { width: 50px; height: 50px; visibility: visible; margin: 0px; }
+#ds-thread #ds-reset .ds-textarea-wrapper { position: relative; border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(204, 204, 204) rgb(204, 204, 204) -moz-use-text-color; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; padding-right: 20px; background: url("bg_sprites.png") repeat-x scroll 0px -90px rgb(255, 255, 255); overflow: hidden; }
+#ds-thread #ds-reset .ds-textarea-wrapper textarea { box-shadow: none; overflow: auto; padding: 10px; height: 54px; margin: 0px; resize: none; color: rgb(153, 153, 153); width: 100%; }
+#ds-thread #ds-reset .ds-textarea-wrapper textarea:focus { color: rgb(51, 51, 51); }
+#ds-thread #ds-reset .ds-textarea-wrapper .ds-hidden-text { word-wrap: break-word; visibility: hidden; position: absolute; top: 0px; left: 10px; right: 10px; }
+#ds-thread #ds-reset .ds-textarea-wrapper textarea, #ds-thread #ds-reset .ds-textarea-wrapper .ds-hidden-text { display: block; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 13px; line-height: 20px; border: medium none; }
+#ds-thread #ds-reset .ds-post-toolbar { position: relative; width: 100%; box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6); }
+#ds-thread #ds-reset .ds-post-toolbar span, #ds-thread #ds-reset .ds-post-toolbar input, #ds-thread #ds-reset .ds-post-toolbar label, #ds-thread #ds-reset .ds-post-toolbar a { vertical-align: middle; width: auto; }
+#ds-thread #ds-reset .ds-post-options { position: relative; margin-right: 100px; height: 30px; border-width: 1px medium 1px 1px; border-style: solid none solid solid; border-color: rgb(204, 204, 204) -moz-use-text-color rgb(170, 170, 170) rgb(204, 204, 204); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; border-bottom-left-radius: 3px; }
+#ds-thread #ds-reset .ds-toolbar-buttons { position: absolute; top: 5px; left: 6px; }
+#ds-thread #ds-reset .ds-toolbar-button { display: block; width: 19px ! important; height: 19px; float: left; margin-right: 4px; background: url("sprites.png") no-repeat scroll 0% 0% transparent; vertical-align: middle; opacity: 0.6; transition: opacity 0.15s linear 0s; }
+#ds-thread #ds-reset .ds-toolbar-button:hover { opacity: 1; }
+#ds-thread #ds-reset .ds-add-emote { background-position: 0px -12px; }
+#ds-thread #ds-reset .ds-add-emote:hover { background-position: 0px -30px; }
+#ds-thread #ds-reset .ds-sync { font-size: 12px; color: rgb(153, 153, 153); line-height: 30px; position: absolute; right: 5px; }
+#ds-thread #ds-reset .ds-post-button { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; position: absolute; right: 0px; top: 0px; height: 32px; width: 100px; text-align: center; text-shadow: 0px 1px 0px rgb(255, 255, 255); color: rgb(85, 85, 85); font-size: 14px; font-weight: bold; border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(170, 170, 170); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; border-bottom-right-radius: 3px; background-color: rgb(230, 230, 230); background-repeat: no-repeat; background-image: linear-gradient(rgb(252, 252, 252), rgb(252, 252, 252) 25%, rgb(230, 230, 230)); transition: all 0.15s linear 0s; box-shadow: 0px 0px 1px rgb(255, 255, 255) inset; }
+#ds-thread #ds-reset .ds-post-button:hover { background-position: 0px -15px; color: rgb(51, 51, 51); }
+#ds-thread #ds-reset .ds-post-button:active { box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15) inset, 0px 1px 2px rgba(0, 0, 0, 0.05); }
+#ds-thread #ds-reset .ds-comments-info { width: 100%; font-size: 13px; margin-top: 10px; padding: 8px 0px; line-height: 25px; position: relative; }
+#ds-thread #ds-reset .ds-sort { position: absolute; right: 0px; top: 8px; }
+#ds-thread #ds-reset .ds-sort a { color: rgb(153, 153, 153); padding: 0px 4px; margin: 0px 2px; }
+#ds-thread #ds-reset .ds-sort a:hover { color: rgb(51, 51, 51); }
+#ds-thread #ds-reset .ds-sort a.ds-current, #ds-thread #ds-reset .ds-sort a:active { color: rgb(221, 51, 34); }
+#ds-thread #ds-reset li.ds-tab { display: inline; font-size: 13px; margin: 0px 5px 0px 0px; padding: 0px; }
+#ds-thread #ds-reset li.ds-tab a { text-shadow: 0px 1px 0px rgb(255, 255, 255); padding: 3px 5px; display: inline; border-radius: 5px; }
+#ds-thread #ds-reset li.ds-tab a.ds-current { border: 1px solid rgb(204, 204, 204); background-color: rgba(0, 0, 0, 0.04); }
+#ds-thread #ds-reset li.ds-tab a:hover { background-color: rgba(0, 0, 0, 0.04); }
+#ds-thread #ds-reset .ds-comments { width: 100%; border-bottom: 1px solid rgba(0, 0, 0, 0.13); }
+#ds-thread #ds-reset .ds-comments:after { content: "."; display: block; height: 0px; clear: both; visibility: hidden; }
+#ds-thread #ds-reset li.ds-post { width: 100%; overflow: hidden; clear: both; border-top: 1px solid rgba(0, 0, 0, 0.13); margin: 0px; padding: 0px; list-style: none outside none; }
+#ds-thread #ds-reset li.ds-post-placeholder { text-align: center; color: rgb(153, 153, 153); padding: 1em 0px; }
+#ds-thread #ds-reset .ds-icon-heart { width: 14px; height: 13px; background-position: 0px -130px; }
+#ds-thread #ds-reset .ds-paginator { border-bottom: 1px solid rgba(0, 0, 0, 0.13); text-align: right; padding-bottom: 15px; clear: both; line-height: 1em; }
+#ds-thread #ds-reset .ds-paginator div.ds-border { border-top: 1px solid rgba(255, 255, 255, 0.7); margin-bottom: 15px; }
+#ds-thread #ds-reset .ds-paginator a { font-size: 12px; margin: 0px 3px; padding: 2px 5px; border: 1px solid transparent; }
+#ds-thread #ds-reset .ds-paginator a:hover, #ds-thread #ds-reset .ds-paginator a.ds-current { border-radius: 3px; background-color: rgba(0, 0, 0, 0.03); }
+#ds-thread #ds-reset .ds-paginator a.ds-current { color: rgb(221, 51, 34); border: 1px solid rgb(204, 204, 204); }
+#ds-thread #ds-reset .ds-powered-by { font-size: 12px; text-align: right; padding: 10px 0px; }
+#ds-thread #ds-reset .ds-powered-by a { color: rgb(153, 153, 153); text-decoration: none; }
+#ds-thread #ds-reset .ds-powered-by a:hover { color: rgb(85, 85, 85); }
+#ds-thread #ds-reset.ds-no-opacity li.ds-post { border-top: 1px solid rgb(221, 221, 221); }
+#ds-thread #ds-reset.ds-no-opacity .ds-comments, #ds-thread #ds-reset.ds-no-opacity .ds-paginator { border-bottom: 1px solid rgb(221, 221, 221); }
+#ds-thread #ds-reset.ds-no-opacity .ds-tab a.ds-current { background: none repeat scroll 0% 0% rgb(248, 248, 248); }
