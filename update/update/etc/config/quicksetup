@@ -1,0 +1,78 @@
+#!/bin/sh
+# 一共6个步骤，按提示操作
+#第一步：设置拨号，一般情况下，只设置前面2句
+uci set network.wan.username='075506036786@163.gd' #设置ppoe上网帐号
+uci set network.wan.password='1234' #设置ppoe上网密码
+uci set network.wan.proto=pppoe
+uci set network.wan.peerdns='0'
+#uci set network.wan.dns='114.114.114.114 223.5.5.5 114.114.115.115 223.6.6.6'
+uci commit network
+ifup wan
+
+#第二步：设置主机名及时间，一般情况下，只设置第一句
+uci set system.@system[0].hostname='gargoyle' #设置主机名
+uci set system.@system[0].timezone=UTC
+uci commit system
+
+#第三步：dhcp，默认即可
+uci set dhcp.lan.leasetime='24h'
+uci set dhcp.lan.limit='254'
+uci commit dhcp
+
+#第四步：设置2.4G 及5G无线。一般情况下，只设置前面三句即可
+uci set wireless.@wifi-iface[0].ssid='gargoyle' #设置2.4G无线的ssid
+uci set wireless.@wifi-iface[1].ssid='gargoyle-5G' #设置5G无线的ssid
+uci set wireless.@wifi-iface[0].key='wifi-password' #设置无线密码
+
+uci set wireless.@wifi-device[0].country='CN'
+uci set wireless.@wifi-device[0].disabled=0
+uci set wireless.@wifi-iface[0].network='lan'
+uci set wireless.@wifi-iface[0].mode='ap'
+
+uci set wireless.@wifi-iface[0].encryption='psk2'
+uci set wireless.@wifi-iface[0].hidden=0
+
+uci set wireless.@wifi-device[1].country='CN'
+uci set wireless.@wifi-device[1].disabled=0
+uci set wireless.@wifi-device[1].channel=165
+uci set wireless.@wifi-iface[1].network='lan'
+uci set wireless.@wifi-iface[1].mode='ap'
+uci set wireless.@wifi-iface[1].encryption='psk2'
+
+uci commit wireless
+
+#第五步：设置翻墙，只需要设置下面四行
+uci set shadowsocks.@shadowsocks[-1].server='198.98.52.61'
+uci set shadowsocks.@shadowsocks[-1].server_port='8888'
+uci set shadowsocks.@shadowsocks[-1].password='1234'
+uci set shadowsocks.@shadowsocks[-1].encrypt_method='rc4-md5'
+
+uci set shadowsocks.@shadowsocks[-1].enable='1'
+uci set shadowsocks.@shadowsocks[-1].use_conf_file='0'
+
+
+uci commit shadowsocks
+
+
+#第六步：修改管理员的密码,比如下面1234是设置的密码
+echo -e "1234\n1234" | (passwd $USER)
+
+
+#设置石像鬼 为 中文界面，下面--无需设置
+uci set gargoyle.global.fallback_lang=English-EN
+uci set gargoyle.global.language=SimplifiedChinese-ZH-CN
+uci commit gargoyle
+. /usr/lib/gargoyle/i18nServices.sh
+change_menu_language "SimplifiedChinese-ZH-CN"
+restart_lang_services
+
+
+## Commit Changes
+#uci commit
+echo "**** Restarting Router ****"
+
+# 无线信号增强
+#sh /etc/config/mwifi
+
+## 设置一件翻墙，按第一种方案, 记住：上面设置了ss帐号和密码后，才能启用下面这一行
+#sh /etc/config/autowall

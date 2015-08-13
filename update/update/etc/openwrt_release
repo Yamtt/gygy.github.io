@@ -1,0 +1,7 @@
+DISTRIB_ID="OpenWrt"
+DISTRIB_RELEASE="Barrier Breaker"
+DISTRIB_REVISION="unknown"
+DISTRIB_CODENAME="barrier_breaker"
+DISTRIB_TARGET="ar71xx/generic"
+DISTRIB_DESCRIPTION="OpenWrt Barrier Breaker 14.07-Built 20150807-gy408-R38fix稳定版"
+DISTRIB_TAINTS="no-all no-ipv6"
