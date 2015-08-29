@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
 <head>
-<!-- 2015-08-29 Sat 21:27 -->
+<!-- 2015-08-29 Sat 21:35 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>石像鬼gargoyle固件 R43 使用教程</title>
@@ -258,48 +258,23 @@ tftp -i <span style="color: #F92672; font-weight: bold;">192.168</span>.1.1 put 
 </div>
 
 <div id="outline-container-orgheadline12" class="outline-2">
-<h2 id="orgheadline12"><span class="section-number-2">4</span> 初次使用本固件</h2>
+<h2 id="orgheadline12"><span class="section-number-2">4</span> 第一次进入</h2>
 <div class="outline-text-2" id="text-4">
-<p>
-刷机完毕之后，可以继续连接上有线，进行下面操作。
-</p>
-
-<p>
-第一次刷机完毕后，默认是开启无线的。默认的无线密码如下：
-</p>
-
-<p>
-默认ssid： <code>Gargoyle</code>
-默认无线密码： <code>Gargoyle</code> ,注意第一个字母 <code>大写</code>
-</p>
-
-<p>
-根据以上无线信息，除了可以连接有线外，也可以单独使用无线。不管是哪种情况，都要确保计算机已连接上路由器才可以。
-</p>
-
 <ul class="org-ul">
-<li>登陆路由器，访问 <a href="http://192.168.1.1/">http://192.168.1.1/</a></li>
-</ul>
-<p>
-输入root的登陆密码 <code>password</code>
-</p>
+<li>刷机成功后，访问LUCI后台地址 <a href="http://192.168.1.1:8081/">http://192.168.1.1:8081/</a> ，登录的时候，输入用户名 <code>root</code> ，密码 <code>password</code></li>
 
-<ul class="org-ul">
-<li>设置路由器的语言</li>
+<li>从 LUCI菜单中 ，找到 <code>系统</code> &#x2014; <code>一键设置</code> 。</li>
 
-<li>设置上网</li>
-</ul>
-<p>
-设置路由器的语言后，第一时间应先配置WAN。
-</p>
+<li>在 打开的 <code>一键设置</code> 页面， 根据提示 设置PPOE帐号、密码，设置好 无线的帐号及密码，设置好IP地址，设置好基本设置</li>
 
-<ul class="org-ul">
-<li>按照以上步骤设置，并点击 <code>保存更改</code>  ，正常情况下，保存后等大概10s左右可拨号成功。</li>
+<li>注意：新手或者不熟悉的，请不要在 <code>一键设置</code> 中 设置adbyby。 不使用翻墙的，请也不要其余ss</li>
+
+<li><code>一键设置</code> 设置完成并保存后， 到 <code>系统</code> &#x2013; <code>快捷命令</code> &#x2013;点击运行 <code>一键设置(luci)</code> 请重启路由器。</li>
+
+<li>路由器 重启后，请测试 上网 及 翻墙是否正常。</li>
+
+<li>石像鬼的界面是 <a href="http://192.168.1.1/">http://192.168.1.1/</a> , 以上步骤设置完成后，大家也可以进入石像鬼界面，查看石像鬼下面的功能。</li>
 </ul>
-<p>
-拨号成功后，可以在 <code>状态</code> 页面，发现 <code>WAN端IP地址</code> 已成功获取到。可以使用浏览器，测试是否可以上网。
-<code>特殊的情况下，仍旧不能上网，可再次确认是否真正已保存成功拨号信息，也可重启多测试一次</code>
-</p>
 </div>
 </div>
 
