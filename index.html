@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
 <head>
-<!-- 2015-08-29 Sat 21:35 -->
+<!-- 2015-08-29 Sat 21:55 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>石像鬼gargoyle固件 R43 使用教程</title>
@@ -436,8 +436,8 @@ tftp -i <span style="color: #F92672; font-weight: bold;">192.168</span>.1.1 put 
 </div>
 </div>
 
-<div id="outline-container-orgheadline24" class="outline-2">
-<h2 id="orgheadline24"><span class="section-number-2">13</span> 广告屏蔽</h2>
+<div id="outline-container-orgheadline25" class="outline-2">
+<h2 id="orgheadline25"><span class="section-number-2">13</span> 广告屏蔽</h2>
 <div class="outline-text-2" id="text-13">
 <ul class="org-ul">
 <li>登录LUCI界面后，点击 <code>服务</code>&#x2014; <code>广告屏蔽</code></li>
@@ -455,10 +455,26 @@ tftp -i <span style="color: #F92672; font-weight: bold;">192.168</span>.1.1 put 
 <li>如 还是没有启动，可以手工 启动adbyby 服务</li>
 </ul>
 </div>
+
+<div id="outline-container-orgheadline24" class="outline-3">
+<h3 id="orgheadline24"><span class="section-number-3">13.1</span> 控制ADbyby的进程数量</h3>
+<div class="outline-text-3" id="text-13-1">
+<p>
+点击菜单 <code>系统</code> &#x2014; <code>计划任务</code>
+添加或反注释下面一句。其中下面的 数字 <code>1</code> 代表每隔1分钟对ADbyby进行进程控制一次。
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh">*/<span style="color: #F92672; font-weight: bold;">1</span> * * * * sh /etc/config/psnumw
+</pre>
+</div>
+</div>
+</div>
 </div>
 
-<div id="outline-container-orgheadline25" class="outline-2">
-<h2 id="orgheadline25"><span class="section-number-2">14</span> 增强无线设置</h2>
+
+<div id="outline-container-orgheadline26" class="outline-2">
+<h2 id="orgheadline26"><span class="section-number-2">14</span> 增强无线设置</h2>
 <div class="outline-text-2" id="text-14">
 <ul class="org-ul">
 <li>登录LUCI界面后，点击 <code>系统</code>&#x2014; <code>快捷命令</code></li>
@@ -468,8 +484,8 @@ tftp -i <span style="color: #F92672; font-weight: bold;">192.168</span>.1.1 put 
 </div>
 </div>
 
-<div id="outline-container-orgheadline26" class="outline-2">
-<h2 id="orgheadline26"><span class="section-number-2">15</span> IPTV设置</h2>
+<div id="outline-container-orgheadline27" class="outline-2">
+<h2 id="orgheadline27"><span class="section-number-2">15</span> IPTV设置</h2>
 <div class="outline-text-2" id="text-15">
 <ul class="org-ul">
 <li>用 网线 将 路由器的LAN 4口 连接到 电视IPTV盒子上面</li>
@@ -479,8 +495,8 @@ tftp -i <span style="color: #F92672; font-weight: bold;">192.168</span>.1.1 put 
 </div>
 </div>
 
-<div id="outline-container-orgheadline27" class="outline-2">
-<h2 id="orgheadline27"><span class="section-number-2">16</span> Aria2设置</h2>
+<div id="outline-container-orgheadline28" class="outline-2">
+<h2 id="orgheadline28"><span class="section-number-2">16</span> Aria2设置</h2>
 <div class="outline-text-2" id="text-16">
 <ul class="org-ul">
 <li>点击 <code>系统</code> &#x2013; <code>Aria2配置</code></li>
@@ -494,8 +510,8 @@ tftp -i <span style="color: #F92672; font-weight: bold;">192.168</span>.1.1 put 
 </div>
 </div>
 
-<div id="outline-container-orgheadline28" class="outline-2">
-<h2 id="orgheadline28"><span class="section-number-2">17</span> 设置samba共享</h2>
+<div id="outline-container-orgheadline29" class="outline-2">
+<h2 id="orgheadline29"><span class="section-number-2">17</span> 设置samba共享</h2>
 <div class="outline-text-2" id="text-17">
 <p>
 需要按下面步骤设置菜单：以luci后台为例 <code>服务</code> &#x2013;&#x2014; <code>网络共享</code>
@@ -533,6 +549,52 @@ tftp -i <span style="color: #F92672; font-weight: bold;">192.168</span>.1.1 put 
 <p>
 用户名为 <code>user1</code> ， 密码是smbpasswd命令后输入的密码。大家可以根据情况，将以上的 <code>user1</code> 取代成自己的。
 </p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline33" class="outline-2">
+<h2 id="orgheadline33"><span class="section-number-2">18</span> DDNS设置</h2>
+<div class="outline-text-2" id="text-18">
+<p>
+DDNS动态域名，一共有三种方法设置。下面分开说明。 <code>从下面方法选择一种适合自己的方法即可</code>
+</p>
+</div>
+<div id="outline-container-orgheadline30" class="outline-3">
+<h3 id="orgheadline30"><span class="section-number-3">18.1</span> ddns设置脚本</h3>
+<div class="outline-text-3" id="text-18-1">
+<ul class="org-ul">
+<li><code>系统</code> &#x2014; <code>ddns设置脚本</code></li>
+<li>尽量不要修改脚本的内容，只需要根据提示修改相关内容即可。</li>
+<li><p>
+到 <code>系统</code> &#x2014; <code>计划任务</code> ， 反注释或添加下面语句
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh">*/<span style="color: #F92672; font-weight: bold;">8</span> * * * * sh /etc/config/ddnslitew
+</pre>
+</div></li>
+</ul>
+<p>
+<code>表示每8分钟，自动更新ddns</code>
+</p>
+</div>
+</div>
+<div id="outline-container-orgheadline31" class="outline-3">
+<h3 id="orgheadline31"><span class="section-number-3">18.2</span> 石像鬼设置DDNS</h3>
+<div class="outline-text-3" id="text-18-2">
+<p>
+石像鬼界面 &#x2014; <code>连接</code> &#x2014; <code>动态域名</code> ，根据提示设置即可。
+</p>
+</div>
+</div>
+<div id="outline-container-orgheadline32" class="outline-3">
+<h3 id="orgheadline32"><span class="section-number-3">18.3</span> LUCI界面设置DDNS</h3>
+<div class="outline-text-3" id="text-18-3">
+<p>
+LUCI界面 &#x2014; <code>服务</code> &#x2014; <code>动态DNS</code>
+注意来源接口要选择 <code>pppoe-wan</code></p>
+</div>
 </div>
 </div>
 </div>
