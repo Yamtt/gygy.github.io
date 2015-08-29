@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
 <head>
-<!-- 2015-08-29 Sat 21:55 -->
+<!-- 2015-08-29 Sat 22:42 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>石像鬼gargoyle固件 R43 使用教程</title>
@@ -593,8 +593,107 @@ DDNS动态域名，一共有三种方法设置。下面分开说明。 <code>从
 <div class="outline-text-3" id="text-18-3">
 <p>
 LUCI界面 &#x2014; <code>服务</code> &#x2014; <code>动态DNS</code>
-注意来源接口要选择 <code>pppoe-wan</code></p>
+注意来源接口要选择 <code>pppoe-wan</code>
+</p>
 </div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline34" class="outline-2">
+<h2 id="orgheadline34"><span class="section-number-2">19</span> 多拨叠加设置</h2>
+<div class="outline-text-2" id="text-19">
+<p>
+<code>在多拨之前，一定要确认你所在的地区和线路是支持多拨的。大部分地区，电信和联通已经限制了多拨</code>
+下面是多拨叠加的设置方法：
+</p>
+<ul class="org-ul">
+<li><code>网络</code> &#x2014; <code>虚拟WAN接口</code></li>
+</ul>
+<p>
+启动：打勾虚拟WAN接口数量：填写数量使用WAN口进行拨号：根据各自情况选择断线自动重连：可以打勾最低在线接口数：根据各自情况填写
+</p>
+
+<p>
+填写完毕以上内容后， <code>保存并应用</code>
+</p>
+
+<ul class="org-ul">
+<li><code>网络</code> &#x2014; <code>虚拟WAN接口</code></li>
+</ul>
+<p>
+点击 <code>重新并发拨号</code>
+</p>
+
+<ul class="org-ul">
+<li><code>系统</code> &#x2014; <code>快捷命令</code>
+ 运行 <code>多拨设置</code></li>
+
+<li><code>如果设置了多拨，但后来不使用多拨了，请不要启用虚拟WAN接口</code></li>
+<li>不使用多拨，请 到 <code>网络</code> &#x2014; <code>负载均衡</code> &#x2014; <code>规则</code> ，清空里面的规则</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline35" class="outline-2">
+<h2 id="orgheadline35"><span class="section-number-2">20</span> miniDLNA设置</h2>
+<div class="outline-text-2" id="text-20">
+<ul class="org-ul">
+<li>LUCI 界面&#x2014; <code>miniDLNA</code></li>
+<li><code>启用</code> 打勾</li>
+<li><code>根目录：</code> 设置为：基本目录</li>
+<li><code>媒体目录：</code> 一定要设置正确。</li>
+</ul>
+<p>
+比如 设置为 <code>/tmp/usb_mount/0000a87d-02/test</code>
+一定要注意目录。注意目录是否正确及是否有权限。石像鬼的硬盘挂载位置为：/tmp/usb_mount/xxx/dir ，也可以到石像鬼的界面指定。或到挂载点中查看。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline36" class="outline-2">
+<h2 id="orgheadline36"><span class="section-number-2">21</span> 守护进程</h2>
+<div class="outline-text-2" id="text-21">
+<ul class="org-ul">
+<li><code>系统</code> &#x2014; <code>守护进程</code></li>
+<li><p>
+尽量不要修改脚本的内容，只需要根据提示修改相关内容即可。
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh"><span style="color: #B92A2A; font-weight: bold;">DAEMONNAME_LIST</span>=<span style="color: #006400; font-weight: bold;">"syncy xunlei adbyby"</span>   <span style="color: #f57900;"># </span><span style="color: #f57900;">&#35774;&#32622;&#38656;&#35201;&#23432;&#25252;&#30340;&#36827;&#31243;&#65292;&#29992;&#31354;&#26684;&#20998;&#24320;&#65292;&#20165;&#20165;&#20462;&#25913;&#36825;&#21477;&#23601;&#21487;&#20197;&#20102;&#12290;</span>
+</pre>
+</div></li>
+
+<li><p>
+到 <code>系统</code> &#x2014; <code>计划任务</code> ， 反注释或添加下面语句
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh">*/<span style="color: #F92672; font-weight: bold;">8</span> * * * * sh /etc/config/autoshw
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline37" class="outline-2">
+<h2 id="orgheadline37"><span class="section-number-2">22</span> 外置脚本</h2>
+<div class="outline-text-2" id="text-22">
+<ul class="org-ul">
+<li><code>系统</code> &#x2014; <code>外置脚本</code></li>
+<li>可以将一些外置脚本粘帖到此处。</li>
+<li><p>
+到 <code>系统</code> &#x2014; <code>计划任务</code> ， 反注释或添加下面语句
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh">*/<span style="color: #F92672; font-weight: bold;">8</span> * * * * sh /etc/config/autoshw
+</pre>
+</div></li>
+</ul>
 </div>
 </div>
 </div>
