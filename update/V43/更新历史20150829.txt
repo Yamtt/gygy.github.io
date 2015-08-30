@@ -1,0 +1,477 @@
+20150829-V43 更新主要内容(石像鬼1.8.0)
+1. 细节的进一步完善
+2. minidlna修正,中文支持，rmvb等格式支持，自动扫描
+3. 石像鬼去广告，规则修改为http://code.taobao.org/svn/dd-wrt/adblock.txt
+4. 百度云：增加一个 修复功能。 多次尝试 无法启动百度云，可以按此按钮。
+5. 负载均衡：汉化
+6. 更换ADbyby的luci界面，显得更为友好
+
+20150823-V42 更新主要内容(石像鬼1.8.0)
+1. 细节的进一步完善
+2. 增加ddns脚本：系统--ddns设置脚本
+3. 增加进程数量控制脚本：系统--控制进程数量
+4. 调整菜单的顺序
+5. 顶部增加 重启按钮
+6. 多播：精简
+7. minidlna修正
+
+
+20150821-V41 更新主要内容(石像鬼1.8.0)
+1. 石像鬼升级到稳定版1.8.0
+2. 细节的进一步完善及处理
+
+20150816-R39 更新主要内容(石像鬼1.7.2)
+目前 R36fix 和 R38 都是非常稳定的版本。石像鬼里面有教程。
+1. 增加 pppoeup 并发多拨，参考了明月的脚本及配置，在此感谢。
+2. LUCI增加 固件帮助
+3. luci-app-mwan3 升级到最新版本。
+4. 增加 luci-app-pppoeserver 及 luci-app-pppoerelay
+5. 增强多拨的功能。
+6. 继续完善 一键设置功能
+
+20150813-R38fix5 更新主要内容(石像鬼1.7.2)
+目前 R36fix 和 R38 都是非常稳定的版本。石像鬼里面有教程。
+1. 多拨：在快捷命令处，增加 多拨快捷命令
+2. minidlna增加rmvb支持-测试
+3. 增加samba-hotplug，自动samba
+4. 更新kms，支持最新，你懂的
+5. 增加iptv的快速设置-快捷命令
+6. 增加在线安装迅雷的功能-快捷命令
+7. 增加 在线更新固件的功能--快捷命令
+8. 增加无线信号增强-快捷命令
+9. 修复百度云 2个问题
+10. 修复 迅雷 启动异常的问题
+11. 该版本其他设置及编译完全和 R36 fix 一样
+12. 增加端口镜像
+13. 增加一键设置路由器界面
+14. 修正部分翻译
+15. 添加翻墙白名单，可以自行在luci添加
+16. 添加翻墙黑名单，可以自行在luci添加
+17. 更换adbyby的luci
+18. 增加视频去广告
+19. 增加中继增强
+
+
+
+20150731-R37: 测试版本
+
+20150725-R36 更新主要内容(石像鬼1.7.2)
+1. 内置了2重翻WALL方法，将r30fix 和 r35的翻WALL方法，整合在一起了。可以任意切换翻WALL方法。
+翻WALL方法，共2步（填写ss信息，然后快捷命令），参考石像鬼内教程。
+2. 添加VnStat网络流量监控器
+3. 多WAN接口
+4. Wondershaper流量匹配
+5. 增加Macvlan
+6. R36并不是从R35升级的。 而是重新编译的。去除了所有多余的lib
+7. 解决自己使用的路由器频繁掉线的问题。
+建议R36版本 不要保留旧版本的配置文件。
+
+
+R35更新如下(石像鬼更新到1.7.2)：
+1.port-mirroring集成。可以通过一些专业软件，进行监控分析 或 行为管理。
+2.集成luci port-mirroring
+3.修正在以往版本，firewall交叉编译的一个小问题
+4.修正pptpd 编译的一个问题
+5.修正dnsmasq-full的一个问题
+6.去掉luci安全模式
+7.增加dnsmasq黑白名单luci设置模式
+8.石像鬼更新到1.7.2
+9.1.7.2 版本，顺便编译一个纯净版本(仅仅是overylay大于90M，仅仅集成石像鬼自带少量插件)
+
+
+==============================1.7.1 版本更新记录=================================
+20150711-R33/R34 更新主要内容
+1.去掉捐款连接。
+非常感谢：黄x(ye****@vip.qq.com)，苏x(ta****@163.com),赵*×(xia***@126.com),李×(lor**@163.com),z*d8***,张×(hrx***@163.com),乐×(lm3***@163.com),葛×*(g*o***@sina.com,论坛idm***)，王×(ben***@163.com)
+2.修复webfile少一个文件的bug
+3.新增xware3界面及接口
+4.去掉minidlna-full版本，还是用回min版本。主要考虑文件太大
+5.luci增加ddns界面，可以在luci下面设置。
+6.新增arp绑定
+7.修复石像鬼ddns的问题。
+8.修复修改密码后，不能登陆的问题。
+9.对ftp做了重要的更新，使用了虚拟多用户的方法，参考hackpascal+fjr115的方法。
+10. 增加了ARP绑定的功能。
+11. 增加qosv4
+12. 增加客户端弹窗
+13. 增加luci安全模式
+14. 增加扫描网络上面的设备信息
+15. 版本变更为R34，1.完善了翻WALLgfw列表，基本全了。 2.更换了翻WALL方法。3. 增加了pptpd server 及 luci界面。3.修正了mg的1个问题。 4.R33有时断线问题。5.其他细节部分的完善。
+R34 翻WALL方法，按石像鬼里面的教程操作即可。 共2步：1. 填写ss帐号及密码。 2.快捷命令，运行一键翻WALL
+20150705-R32 更新主要内容
+1. 自用的一个版本。luci端口为8081。
+2.重新添加miniupnpd，版本是full版本
+3.迅雷修改成外置的方式，迅雷的文件，见共享同一个目录下面。解压到移动硬盘中，到luci设置路径即可。
+翻WALL方法-换回来30fix版本：
+1. luci面板--》ShadowSocks，仅仅修改里面的 服务器地址 服务器端口 本地端口 密码 加密方式。其他任何设置不要乱动。
+2. 到 luci界面-网络-DHCP/DNS 中：
+                      a. 在 一般设置  页面  --DNS转发 填写  127.0.0.1#5354
+                      b. 在hosts和解析文件 页面 中， 忽略解析文件 将这个勾勾 打上。
+3. 访问 LUCI界面 系统--自定义命令，在 onekey-autowall 自定义命令处，点击 运行。运行成功后，会自动重启
+20150628-R31 更新主要内容
+1. 以稳定版本的源代码，重新编译一次。
+2. 默认ftp 帐号 gge ，密码408408
+3. 默认共享帐号 gge， 密码408408
+3. ddns 可以在默认两个例子上面 进行设置。
+4. 完善新的更方便翻WALL方法：
+   设置步骤如下：
+   1. luci面板--》ShadowSocks，仅仅修改里面的 服务器地址 服务器端口 本地端口 密码 加密方式。其他任何设置不要乱动。
+  注意，翻WALL 就是这一步。
+20150612-R30fix2（稳定版） 更新主要内容
+1. 修正yellowvii提到的dropbear密钥权限问题。
+2. 修正USB挂载fat及exfat乱码的问题。
+3. 暂去掉13信道。记得刷本版本后，不能恢复之前的无线设置。
+4. 更换新的更方便翻WALL方法：
+   设置步骤如下：
+   1. luci面板--》ShadowSocks，仅仅修改里面的 服务器地址 服务器端口 本地端口 密码 加密方式。其他任何设置不要乱动。
+  注意，翻WALL 就是这一步。
+  2. 如果第一步还不行，访问 LUCI界面 系统--快捷命令，在 onekey-autowall 自定义命令处，点击 运行。运行成功后，会自动重启
+
+20150606-R30fix（稳定版） 更新主要内容
+1. ss翻WALL列表更新
+2. 去掉openssh，保留自带的ssh。修复ssh端口冲突的问题。也为了缩小空间。
+3. 优化dnsmasq-full设置
+4. 添加web文件传输功能
+5. 百度云 配置文件的调整。---解决方法由topuu0792发现
+6. 翻wall导致ddns解析为ss的服务器---- lm317379829
+7. transmission的端口映射始终没法打开-----设置问题，简化操作
+8. 增加摄像头驱动
+9. 开启kmod-usb-net-hso，kmod-fs-ntfs
+10.迅雷 由 外置的方式 修改成 内置方式
+11.修改ddns的源码，fix 多拨及ss情况下的ip情况
+
+20150525-R30（稳定版） 更新主要内容-20150531有fix 覆盖版本
+1.添加fp模拟，可以运行Mlmonkey
+2.重新添加dnsmasq-full
+2.修正了R29及R28的问题，我昨晚测试，无线 、adbyby及ss都没有问题了。
+3.如果该版本稳定，将至少停留1个月以上才考虑出新的版本了。
+4.关于此版本的稳定性，有使用的，最好在后面回复一下使用情况，以便我能统计下及大致了解下。
+5.优化了翻WALL的方案，改进了翻WALL的步骤，简化了翻WALL的步骤, 增加了一键翻WALL的命令及按钮。
+6.去掉vnstat
+7. 百度云 更新到2.5.1最新版本
+8. 5.29修复小部分bug，重新覆盖上传。请重新下载最新R30。
+9.4300 nand增加kmod-nand
+10.增加kmod-nand-ar934x
+11.Busybox--增加usleep支持
+12.移动磁盘设备（U盘 移动硬盘等等）插入USB口后，在自动挂载脚本运行后，   如果挂载成功，会 中速闪烁 绿色LED灯 大约8秒    如果挂载失败，将 快速闪烁 橙色LED灯 大约8秒    脚本来源：蓝山7.自动挂载脚本，脚本来源：蓝山
+13.LUCI界面：增加CPU类型，频率，内存主频 及 在线手册等几个显示、按钮
+14.百度云fix一个依赖问题
+15.luci界面下面增加ftp设置
+16. 发布 部分 图文教程，地址 http://gygy.github.io/
+      教程内容涉及太多，很难全部完成，只能慢慢补充及完善。
+
+最新翻WALL方法：
+1. luci面板--》ShadowSocks，仅仅修改里面的 服务器地址 服务器端口 本地端口 密码 加密方式。其他任何设置不要乱动。
+2. 到 luci界面-网络-DHCP/DNS 中：
+                      a. 在 一般设置  页面  --DNS转发 填写  127.0.0.1#5354
+                      b. 在hosts和解析文件 页面 中， 忽略解析文件 将这个勾勾 打上。
+3. 访问 LUCI界面 系统--自定义命令，在 onekey-autowall 自定义命令处，点击 运行。运行成功后，会自动重启
+
+20150522-R29 更新主要内容
+1.百度云更新到2.5.0版本，程序 和 luci同步更新。
+2.shadowsocks更新到最新版本，chinadns更新最新的list
+3.修复R28的一些问题
+4. 更换打印服务器为hackpascal的支持多个打印机共享的打印服务器。
+5. 添加webshell（石像鬼 及 luci界面都有一个webshell）
+6. 进行了部分程序的优化
+7. 百度云更新到2.2.1, 更新日期为2015-05-10的版本。
+8. 重新添加dnsmaq-full支持。
+9. 在状态页面，显示挂载硬盘的空间及其他信息。
+20150517-R28（稳定版） 更新主要内容------最新的版本是2015-05-18 21:40分上传的。
+1.修改摄像头的默认端口为8081, 默认的端口和luci冲突了。
+2.修复R27版本，无线不能启动的问题。
+3.修复luci界面，soft update发生500 error的问题。
+4.修复R27版本，samba速度慢的问题
+5.计划该版本是一个稳定的版本，该版本出现的问题，修正后，仍以R28版本命名。但文件会覆盖上传。
+6.R29版本是一个测试性的版本，变动较大，比如samba 升级 到samba4，迅雷升级，翻WALL方案。
+7.有网友反馈，刷了固件后，发现宽带不能跑满速。经过测试及网友反馈后，这是adbyby引起的。
+   这是adbyby的nat转发引起的。使用去广告，则有这个不好的地方。对于小宽带的用户，影响几乎
+   是忽略的。
+   当然也有解决方法：
+  1. 禁用adbyby
+  2. 划分不同的网段。下载机，不走adbyby的nat。
+8.5.17 该版本添加了web认证，挖炕作了一定处理。
+9. 添加cpulimit及luci
+10.添加http服务器的参数的修改，可在luci上面修改luci等等参数
+
+20150509-R27 更新主要内容
+1.更新 openwrt-shadowsocks
+2.更新 openwrt-dist-luci
+3.更新 openwrt-dnsmasq
+4.继续优化开机服务
+5.增强无线的传输速率
+6.处理有时无法访问个别https的问题(由wifipass发现)
+7.完全去掉ipv6
+8.完全去掉dnsmasq-full（依赖ipv6），使用默认的dnsmasq
+9.集成kms windows 激活服务器（可激活windows 7，windows 8.1 , office 2013/2010等产品），使用方法：石像鬼服务--kms-开启
+10.集成优酷路由宝，挖矿
+11.将多余的lib一律去掉，进一步减少固件的大小。
+
+20150506-R26 更新主要内容
+1.优化部分开机服务，将尽可能的服务禁止。有需要的服务，请在石像鬼界面启动。
+2.优化adbyby，处理adbyby和dns、翻WALL及多拨冲突的问题--这两天帖子反馈了这问题。
+
+20150503-R25 更新主要内容
+1.集成macvlan
+2.集成mmc-over-gpio
+3.集成multiwan
+4.集成OpenConnect VPN
+5.集成redsocks2
+6.优化文件共享的速度。我的是ext3格式的，简单测试，上传速度能达到26M++，最大可以到46M左右。下载速度8M-10M。
+7.重新编译ufsd-ar71xx-3.10, 如果希望使用ufsd挂载，请在挂载选择ufsd。
+8.iptv的几个设置
+9.添加nfts-3g 及 exfat 几个拓展
+10.自定义命令处：添加一个刷机后，恢复设置的快捷按钮。---自用。可以自行修改 位置。
+11. 添加udpxy
+12. 新增了Buffalo WZR-HP-AG300H，Buffalo WZR-HP-G300NH2，WZR-HP-G300NH型号的固件（完整固件，特性完全和4300/3700v4 一样）
+
+20150501-R24 更新主要内容
+1.新增SQM网络优化脚本，并增加对应的luci。
+2.新增cpulimit及cpulimit-ng，并增加对应的luci。
+3. 石像鬼 界面，默认 设置为 中文。不用手动再激活一次。
+4.新增luci-app-pdnsd
+7.新增openvpn
+8.新增watchcat
+9. 谢谢 泡泡仔 提供的无污染翻WALL方案。 在该版本中，进行了改进。翻WALL的设置方法，参考石像鬼gui里面的教程。
+10. 更新 网件 3800的固件。同样更新到R24
+
+20150428-R23 更新主要内容
+1. 继续完善翻WALL方案
+2. 继续做了部分细节的优化，我tftp刷机了三次。luci软件更新正常，拨号正常，翻WALL正确，dns污染问题已解决。
+3. 有部分地区的朋友，反馈拨号会掉线（我从来没有遇到掉线情况）。感谢lordquest在后面提出的解决方案。在该版本作了这个修正。
+4. 出第2个精简版本（仅仅供部分网友使用，建议优先使用集成版本）。
+5. 新增plugin-gargoyle-minidlna 及 luci-app-minidlna的支持
+6. 新增minidlna支持格式，支持mov、flv、rm、rmvb、mkv等格式的
+7. 在20150429 第一次发布了3800系列的固件，和4300 R23 设置一样，唯一区别插件多少。
+
+翻WALL的设置方法（注意步骤，设置不对，可能无法上网）：
+                      设置ss之前，先拨号，看看上网是否正常。最好重启确认下。一旦没有问题，
+                      可以直接 到luci面板--》ShadowSocks，仅仅修改里面的 服务器地址 服务器端口 本地端口 密码 加密方式。其他设置不要乱动。
+                      其他任何设置不用动。一旦设置好后，可以到石像鬼的界面，检查相关服务是否为开机启动（R23默认启动），启动ss的相关服务              （chinadns，shadowsocks，pdnsd）。
+                      设置好以上后，正常可以上网，最好重启确认下。一般重启后，就可以翻WALL了。测试www.google.com， 到目前为主可以翻大多数墙了</p>
+                      如此时无法访问 twitter.com， 说明存在dns污染。 如要解决这个问题，需要到 luci界面-网络-DHCP/DNS 中：
+                      a. 在 一般设置  页面  --DNS转发 填写  127.0.0.1#5354
+                      b. 在hosts和解析文件 页面 中， 忽略解析文件 将这个勾勾 打上。
+                      c. 重启
+20150418-R22 更新主要内容
+1. 待测试版本。 编译参数 基本 和 R21一样。
+2. 去掉了ipv6，dnsmasq-full的支持。
+3. 石像鬼源码 更新到最新。重新编译。
+
+20150418-R21 更新主要内容（此版本有问题）
+1. 完善翻WALL方案，解决少部分dns被污染的问题。国内的ip，默认不翻WALL。国外的ip，翻WALL。解决污染问题。
+2. 禁用部分服务。当需要这些服务的时候，请自行到石像鬼的后台进行启用。
+3. 翻WALL方法：请参考石像鬼界面的 教程
+4. R21 一共有2个版本。如拨号有断线的，可以试试no ip v6，no dnsmasq-full版本的。
+5. 改变石像鬼的硬盘默认加载位置，默认在tmp下面。使其和OP默认习惯一样。
+
+
+20150418更新到1.7.1 AR系列R1,主要更新内容：
+1. 发布AR第2个版本
+
+20150413-R20 更新主要内容
+1.尝试修复dnscrypt-proxy
+2.更换abbyby的luci插件
+3.修复opkg 源问题
+4.添加upnp
+5.添加luci-app-redsocks2
+
+
+20150412-R19 更新主要内容
+1. 集成dnscrypt-proxy
+2. 集成dnscrypt-proxy对应的luci
+3. 更新百度云最新版本2.2.0-2及对应的SyncY-Python-luci_2.2.0-2
+
+
+
+20150412-R18 更新主要内容
+1. 修复集成最新版本pdnsd，可以用来配合翻WALL
+2. 集成amule电驴下载及amule网页管理端， 注意需要在石像鬼 服务 中，重启一下amule 才可以访问到amule的网页管理
+3. 添加一个简易版的教程
+4. 默认不启动ss。 需要使用ss的，请在石像鬼界面 启动相关服务
+
+20150411-R17 更新主要内容
+1. 修正部分问题
+
+20150410-R16 更新主要内容
+2. 修正lordquest反馈的adbyby的路径问题
+3. 更新redsocks2
+4. 更新shadowsocks的ignore文件
+5. 添加luci-app-p910nd 打印机服务器
+6. 集成voip电话
+7. 集成asterisk
+
+
+20150407-R15 更新主要内容
+1.修复colorbox不能启动的问题。colorbox是手机控制路由器的服务
+
+20150405-R14 更新主要内容
+1.coova-chilli集成
+2.wifidog
+3.colorbox
+
+
+20150405-R13 更新主要内容
+一. 集成kmod-macvlan
+二. luci-app-samba
+
+
+20150404-R12 更新主要内容
+1. 修复石像鬼gui不兼容的问题
+2. 重新集成的swigger的ufsd
+3. 添加和exfat相关的插件
+20150331-R11 更新主要内容
+1. 重新更新了源代码。
+2. 添加版本号识别
+3. 添加exfat
+4. 暂去掉lighttd，php5.6，mysql-server
+5. 暂去掉luci部分插件，待稳定后，再慢慢添加
+6. 再次尝试修复和luci面板整合的问题
+
+20150322更新到1.7.1 R10,主要更新内容（集成建站）：
+一. 添加luci-app-redsocks2
+二. 添加luci-app-n2n
+三. 更新最新版本的luci，修复上一个版本一个问题。
+四. 增加joe
+五. 添加php5支持，php版本为5.6.6，集成php能集成的全部组件
+六. 添加mysql支持
+七. 修复上一个版本几个小问题
+八. 修正多拨插件整合问题
+
+
+20150322更新到1.7.1 R9,主要更新内容：
+一. 彻底解决luci及石像鬼双面板访问的bug
+二. 添加版本号标识
+四. 添加luci-app-webshell
+五. 修正sqlite3 and libxml2
+六. 修复少部分菜单乱码的问题
+七. 添加lighttpd-mod-access等模块
+八. 修复lighttpd不能启动的问题
+
+20150320更新到1.7.1 R8,主要更新内容：
+一. ntfs-3g use external FUSE
+二. 添加colorbox，手机端(Android和IPhone)远程管理路由器
+三. 添加screen
+四. 添加uhttpd-mod-lua
+五. 添加gargoyle-tor-geoip
+六. 添加kmod-fs-ntfs
+七. Support NFSv4 in NFS server
+八. 修正paragon ntfs驱动(ufsd)
+
+20150320更新到1.7.1 AR系列R0,主要更新内容：
+一. 增加官方的全主题，全插件的支持。
+
+
+20150320更新到1.7.1R7,主要更新内容：
+一. 添加renice功能，设置进程的优先级
+二. 修正dnsmasq-full，添加ipset等支持 （石像鬼编译这个，折腾了很久）
+三. 重新git最新代码进行编译
+四. 增加ipv6支持
+
+
+
+20150315更新到1.7.1R6,主要更新内容：
+一. 增加paragon ntfs驱动(ufsd)，商业ntfs/hfs+驱动。比ntfs-3g的性能强很多。来自swigger
+二. 固件命令历史保存，unicode，更加方便经常使用ssh的。
+三. 设置RESTORECON
+四. 增加可用的opkg源
+六. 优化ss配置，注意
+    设置ss之前，先拨号，看看上网是否正常。最好重启确认下。一旦没有问题，
+    可以直接 到luci面板--》ShadowSocks，仅仅修改里面的 服务器地址 服务器端口 本地端口 密码 加密方式
+    其他任何设置不用动。设置好以上后，正常可以上网，最好重启确认下。
+
+20150315更新到1.7.1R5,主要更新内容：
+1. 修正R4的几个小问题
+2. 石像鬼的界面，增加一个“应用接口”
+
+
+20150314更新到1.7.1R4,主要更新内容：
+1. 集成cpulimit 及 cpulimit-luci
+2. 集成wifidog 及wifidog-luci，未测试，默认不启用。
+3. 修正R3的几个小问题。
+
+20150314更新到1.7.1R3,主要更新内容：
+更新1： 集成Luci双界面（默认是石像鬼界面GUI，可以切换到openwrt的luci界面），双luci面板互不影响
+更新2：集成 迅雷 luci （小白可在luci界面配置，下同）
+更新3：集成脱机下载aria2 luci界面
+更新4：集成adbyby luci界面
+更新5：集成脱机下载transmissionluci界面
+更新6：集成ChinaDNS shadowsocks-libev-spec 的luci界面，可以在界面上面配置。
+更新7：集成百度云的luci面板
+更新8：集成集成硬盘自动休眠hd-idle 的luci
+更新9：集成mwan3 及 luci-mwan3
+更新10：去掉multiwan
+更新11：集成 MJPG-streamer  及luci
+更新12：计划任务
+
+
+
+20150309 更新到1.7.1R2
+1. 开启无线 12 和 13信道。来自恩山@Lean
+2. 增加2.4G及5G的无线频率
+
+20150308 更新到1.7.1R1
+这个版本做了大量的更新 及 集成，尽可能将一些功能集成到固件中去了。 本次主要更新内容
+
+1. 集成自动翻WALL软件（最新版本，没luci，自行配置即可，很简单）
+ChinaDNS shadowsocks-libev-spec
+
+2. 集成去广告adbyby，做了优化，直接使用即可。和ss不会有冲突。一直很稳定。广告效果很好。
+3. 集成百度云同步SyncY-Python-v2.1.2，最新版本。
+4.集成多拨multiwan（没LUCI界面）
+
+5.集成transmission-daemon transmission-web
+6.集成功能更为强大的transmission-UI（web control）
+7.集成硬盘自动休眠hd-idle
+8.集成下载工具curl git wget
+
+9.集成git screen
+10.集成编辑器zile mg nano，vim已内置
+11.集成openssh，openssh-sftp，可代替dropbear
+12.集成python，python-mini，python-curl
+13.集成发邮件工具 ssmtp mutt msmtp
+14.集成aria2最新全功能版本（版本好1.18.10）,支持多协议
+15.集成yaaw （aria2的web客户端）
+16.集成webui-aria2 （aria2的web客户端）
+17.集成lighttpd （类似apache，网页服务端），集成webdav，auth，alias等主要模块
+18. 集成dnsmasq-full，aa65535大神的版本，功能比官方的强。
+
+
+20150309 更新到 1.7.1
+继续集成dnsmasq-full
+
+
+20150304 更新
+本次更新主要集成：gargoyle-webcam，gargoyle-webshell，gargoyle-wifi-schedule，
+gargoyle-i18n-SimplifiedChinese-ZH-CN中文
+gargoyle-initd 服务管理
+gargoyle-logread 日志
+gargoyle-minidlna
+gargoyle-openvpn
+gargoyle-ping-watchdog
+gargoyle-pptp
+gargoyle-theme-by-matei
+gargoyle-theme-dark-one
+gargoyle-theme-demantoid
+gargoyle-theme-green
+gargoyle-theme-horchata
+gargoyle-theme-light
+gargoyle-theme-xeye
+whereis
+fdisk
+zip
+nfs-utils
+nfs-3g
+gargoyle-mjpg-streamer
+Enable feed packages
+Enable feed luci
+Enable feed routing
+curl
+iftop
+
+
+20150301更新到1.7.1
+纯净版本，和官方完全一致。仅仅overylay 大于 90M
+
+201502 版本1.7.0
+纯净版本，和官方完全一致。仅仅overylay 大于 90M
