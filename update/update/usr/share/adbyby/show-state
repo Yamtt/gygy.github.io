@@ -1,1 +1,0 @@
-ps | grep "/usr/share/adbyby/adbyby" | grep -v grep
