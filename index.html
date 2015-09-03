@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
 <head>
-<!-- 2015-09-03 Thu 15:00 -->
+<!-- 2015-09-03 Thu 16:59 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>石像鬼gargoyle固件 R43 使用教程</title>
@@ -275,6 +275,10 @@ tftp -i <span style="color: #F92672; font-weight: bold;">192.168</span>.1.1 put 
 
 <li>石像鬼的界面是 <a href="http://192.168.1.1/">http://192.168.1.1/</a> , 以上步骤设置完成后，大家也可以进入石像鬼界面，查看石像鬼下面的功能。</li>
 </ul>
+
+<p>
+<code>注意，一定要注意看一键设置的说明。</code>
+</p>
 </div>
 </div>
 
@@ -301,7 +305,8 @@ tftp -i <span style="color: #F92672; font-weight: bold;">192.168</span>.1.1 put 
 <div class="outline-text-2" id="text-6">
 <p>
 菜单：以luci后台为例 <code>系统</code> &#x2013;&#x2014; <code>管理权</code>
-按照如下设置进行修改，并保存。
+进行修改，并保存。
+<code>修改后台密码，在一键设置中也可以</code>
 </p>
 </div>
 </div>
@@ -398,11 +403,9 @@ tftp -i <span style="color: #F92672; font-weight: bold;">192.168</span>.1.1 put 
 <li>设置需要同步的目录。比如 本地目录设置为/mnt/sda2/syncy/upload 远端目录 为/ ,并设置同步方式。</li>
 
 <li>保存和应用 设置。然后重启路由器</li>
-</ul>
 
-<p>
-8、可以多测试几次，如仍有问题，可以到 <code>快捷命令中</code>&#x2013;点击 <code>修复百度云</code>
-</p>
+<li>可以多测试几次，如仍有问题，可以到 <code>快捷命令中</code>&#x2013;点击 <code>修复百度云</code></li>
+</ul>
 </div>
 </div>
 
@@ -414,8 +417,25 @@ tftp -i <span style="color: #F92672; font-weight: bold;">192.168</span>.1.1 put 
 
 <li><code>设置翻墙黑名单</code> ：所有需要 走ss路线的域名。</li>
 
-<li>设置方法是： 按照 server=/.lsxszzg.com/127.0.0.1#7913 的格式 在任意位置插入一行</li>
+<li><p>
+设置方法是： 按照 server=/.lsxszzg.com/127.0.0.1#7913 的格式 在任意位置插入一行
+</p>
 
+<div class="org-src-container">
+
+<pre class="src src-sh"><span style="color: #f57900;">#</span><span style="color: #f57900;">&#20320;&#33258;&#23450;&#20041;&#30340;&#35268;&#21017;&#65292;&#21487;&#20197;&#25554;&#20837;&#22312;&#19979;&#38754;</span>
+<span style="color: #f57900;"># </span><span style="color: #f57900;">&#20005;&#26684;&#25353;&#29031;&#26684;&#24335;&#65292;&#19968;&#21477;&#19968;&#34892;</span>
+<span style="color: #f57900;"># </span><span style="color: #f57900;">&#20363;&#23376;</span>
+<span style="color: #f57900;">#</span><span style="color: #f57900;">server=/.lsxszzg.com/127.0.0.1#7913</span>
+<span style="color: #f57900;">#</span><span style="color: #f57900;">&#35774;&#32622;&#23436;&#27605;&#65292;&#38656;&#35201;&#37325;&#21551;&#36335;&#30001;&#22120;&#65292;&#25110;&#32773;&#37325;&#21551;ss&#30456;&#20851;&#26381;&#21153;</span>
+<span style="color: #f57900;">#</span><span style="color: #f57900;">&#19979;&#38754;&#26159;&#22266;&#20214; &#33258;&#24102;&#30340;&#35268;&#21017;</span>
+<span style="color: #B92A2A; font-weight: bold;">server</span>=/.lsxszzg.com/<span style="color: #F92672; font-weight: bold;">127</span>.0.0.1#7913
+</pre>
+</div></li>
+</ul>
+
+
+<ul class="org-ul">
 <li>保存 并重启路由器</li>
 </ul>
 </div>
@@ -429,7 +449,31 @@ tftp -i <span style="color: #F92672; font-weight: bold;">192.168</span>.1.1 put 
 
 <li><code>设置翻墙白名单</code> ：所有需要 不走ss路线的域名。</li>
 
-<li>设置方法是： 按照 server=/.taobao.com/114.114.114.114 的格式 在任意位置插入一行</li>
+<li><p>
+设置方法是： 按照 server=/.taobao.com/114.114.114.114 的格式 在任意位置插入一行
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh"><span style="color: #f57900;">#</span><span style="color: #f57900;">&#27599;&#19968;&#34892; &#20889;&#19968;&#20010;&#22320;&#22336;&#65292;&#20005;&#26684;&#25353;&#26684;&#24335;&#20889;</span>
+<span style="color: #f57900;"># </span><span style="color: #f57900;">&#40657;&#30333;&#21517;&#21333; &#19981;&#33021;&#20914;&#31361;</span>
+<span style="color: #f57900;"># </span><span style="color: #f57900;">&#20363;&#23376;&#22914;&#19979;&#65306;</span>
+<span style="color: #f57900;"># </span><span style="color: #f57900;">server=/.taobao.com/114.114.114.114</span>
+<span style="color: #f57900;">#</span><span style="color: #f57900;">&#35774;&#32622;&#23436;&#27605;&#65292;&#38656;&#35201;&#37325;&#21551;&#36335;&#30001;&#22120;&#65292;&#25110;&#32773;&#37325;&#21551;ss&#30456;&#20851;&#26381;&#21153;</span>
+<span style="color: #f57900;">#</span><span style="color: #f57900;">&#27880;&#24847; &#22914;&#26524;&#38656;&#35201;&#23558;&#40657;&#21517;&#21333;&#37324;&#38754;&#30340;&#22320;&#22336;&#65292;&#36716;&#25104;&#19981;&#36208;ss&#12290;&#39318;&#20808;&#38656;&#35201;&#23558;&#40657;&#21517;&#21333;&#21435;&#25481;&#35813;&#22320;&#22336;&#65292;&#24182;&#19988;&#20462;&#25913;ignore.list</span>
+<span style="color: #B92A2A; font-weight: bold;">server</span>=/#/<span style="color: #F92672; font-weight: bold;">114</span>.114.114.114
+
+<span style="color: #f57900;">#</span><span style="color: #f57900;">for ddns</span>
+<span style="color: #B92A2A; font-weight: bold;">server</span>=/.oray.com/<span style="color: #F92672; font-weight: bold;">114</span>.114.114.114
+<span style="color: #B92A2A; font-weight: bold;">server</span>=/.3322.org/<span style="color: #F92672; font-weight: bold;">114</span>.114.114.114
+<span style="color: #B92A2A; font-weight: bold;">server</span>=/.no-ip.com/<span style="color: #F92672; font-weight: bold;">114</span>.114.114.114
+<span style="color: #B92A2A; font-weight: bold;">server</span>=/.ChangeIP.com/<span style="color: #F92672; font-weight: bold;">114</span>.114.114.114
+<span style="color: #B92A2A; font-weight: bold;">server</span>=/.dyn.com/<span style="color: #F92672; font-weight: bold;">114</span>.114.114.114
+<span style="color: #B92A2A; font-weight: bold;">server</span>=/.3322.net/<span style="color: #F92672; font-weight: bold;">114</span>.114.114.114
+<span style="color: #B92A2A; font-weight: bold;">server</span>=/.dhs.org/<span style="color: #F92672; font-weight: bold;">114</span>.114.114.114
+<span style="color: #B92A2A; font-weight: bold;">server</span>=/.dyns.cx/<span style="color: #F92672; font-weight: bold;">114</span>.114.114.114
+</pre>
+</div></li>
 
 <li>保存 并重启路由器</li>
 </ul>
@@ -442,13 +486,13 @@ tftp -i <span style="color: #F92672; font-weight: bold;">192.168</span>.1.1 put 
 <ul class="org-ul">
 <li>登录LUCI界面后，点击 <code>服务</code>&#x2014; <code>广告屏蔽</code></li>
 
-<li><code>启动</code> ：启动 一定要打勾， <code>启用透明代理</code> ：一定要打勾</li>
+<li><code>启动</code> ：启动 一定要打勾， <code>启用透明代理</code> ：请保持默认。</li>
 
-<li><code>监听地址</code> ：192.168.1.1 或者是0.0.0.0</li>
+<li><code>监听地址</code> ：192.168.1.1 或者是0.0.0.0， 请保持默认。</li>
 
 <li>其他 任何设置 保持默认</li>
 
-<li>点击 <code>保存和应用</code> 。</li>
+<li>点击 <code>保存和应用</code> ，如发现保存1次，没有运行，可以多保存应用几次 。</li>
 
 <li>重启路由器，检查 <code>广告屏蔽</code> 是否已启动。</li>
 
@@ -476,6 +520,10 @@ tftp -i <span style="color: #F92672; font-weight: bold;">192.168</span>.1.1 put 
 <div id="outline-container-orgheadline26" class="outline-2">
 <h2 id="orgheadline26"><span class="section-number-2">14</span> 增强无线设置</h2>
 <div class="outline-text-2" id="text-14">
+<p>
+<code>Opewrt对无线的支持，一般能支持到150M，这是Openwrt共有的。可以按照下面的方法，增强无线设置</code>
+</p>
+
 <ul class="org-ul">
 <li>登录LUCI界面后，点击 <code>系统</code>&#x2014; <code>快捷命令</code></li>
 
@@ -660,7 +708,7 @@ LUCI界面 &#x2014; <code>服务</code> &#x2014; <code>动态DNS</code>
  运行 <code>多拨设置</code></li>
 
 <li><code>如果设置了多拨，但后来不使用多拨了，请不要启用虚拟WAN接口</code></li>
-<li>不使用多拨，请 到 <code>网络</code> &#x2014; <code>负载均衡</code> &#x2014; <code>规则</code> ，清空里面的规则</li>
+<li>不使用多拨，请 到 <code>网络</code> &#x2014; <code>负载均衡</code> &#x2014; <code>规则</code> ，清空里面的规则。否则会 <code>影响网络的速度</code></li>
 </ul>
 </div>
 </div>
@@ -668,6 +716,9 @@ LUCI界面 &#x2014; <code>服务</code> &#x2014; <code>动态DNS</code>
 <div id="outline-container-orgheadline36" class="outline-2">
 <h2 id="orgheadline36"><span class="section-number-2">21</span> miniDLNA设置</h2>
 <div class="outline-text-2" id="text-21">
+<p>
+<code>本固件的miniDLNA是全功能版本，支持rmvb等不同的格式，支持自动扫描</code>
+</p>
 <ul class="org-ul">
 <li>LUCI 界面&#x2014; <code>miniDLNA</code></li>
 <li><code>启用</code> 打勾</li>
@@ -676,7 +727,7 @@ LUCI界面 &#x2014; <code>服务</code> &#x2014; <code>动态DNS</code>
 </ul>
 <p>
 比如 设置为 <code>/tmp/usb_mount/0000a87d-02/test</code>
-一定要注意目录。注意目录是否正确及是否有权限。石像鬼的硬盘挂载位置为：/tmp/usb_mount/xxx/dir ，也可以到石像鬼的界面指定。或到挂载点中查看。
+一定要注意目录。注意目录是否正确及是否有权限。石像鬼的硬盘挂载位置为：/tmp/usb_mount/xxx/dir (<code>建议用此格式填写</code>)，也可以到石像鬼的界面指定。或到挂载点中查看。
 </p>
 </div>
 </div>
@@ -686,8 +737,9 @@ LUCI界面 &#x2014; <code>服务</code> &#x2014; <code>动态DNS</code>
 <div class="outline-text-2" id="text-22">
 <ul class="org-ul">
 <li><code>系统</code> &#x2014; <code>守护进程</code></li>
+<li>尽量不要修改脚本的内容，只需要根据提示修改相关内容即可。</li>
 <li><p>
-尽量不要修改脚本的内容，只需要根据提示修改相关内容即可。
+下面语句的 数字 <code>8</code> 代表每隔8分钟执行一次脚本。
 </p>
 
 <div class="org-src-container">
@@ -715,10 +767,10 @@ LUCI界面 &#x2014; <code>服务</code> &#x2014; <code>动态DNS</code>
 <ul class="org-ul">
 <li><code>系统</code> &#x2014; <code>外置脚本</code></li>
 <li>可以将一些外置脚本粘帖到此处。</li>
+<li>到 <code>系统</code> &#x2014; <code>计划任务</code> ， 反注释或添加下面语句。</li>
 <li><p>
-到 <code>系统</code> &#x2014; <code>计划任务</code> ， 反注释或添加下面语句
+下面语句的 数字 <code>8</code> 代表每隔8分钟执行一次脚本。
 </p>
-
 <div class="org-src-container">
 
 <pre class="src src-sh">*/<span style="color: #F92672; font-weight: bold;">8</span> * * * * sh /etc/config/autoshw
