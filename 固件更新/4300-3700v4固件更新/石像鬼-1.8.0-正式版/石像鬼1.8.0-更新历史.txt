@@ -1,9 +1,14 @@
+201500925-V48fix1 更新主要内容(石像鬼1.8.0)
+1. 增加刷机，第一次启动的自定义脚本firstsetup。脚本放置 /mnt/sda1/tmp/firstsetup 或/mnt/sda2/tmp/firstsetup 或/mnt/sda3/tmp/firstsetup
+   设置了脚本，刷机完成后，会在第一次启动自动执行该脚本内容。大家可以设置ppoe，ss，adbyby，百度云等设置信息。做到刷完机，马上可使用。
+2. 修复翻墙的一处错误设置
+3. 增加 ss 、chinadns，pdnsd，adbyby强制关闭和开启功能
+
 
 201500924-V48fix1 更新主要内容(石像鬼1.8.0)
 2. 修复点击  菜单退出，发生错误的问题
 3. 修复翻墙的一处错误设置
-4. 增加 自动中继
-5. 增加 pptp服务器
+4. 增加 ss 、chinadns，pdnsd，adbyby强制关闭和开启功能
 
 201500923-V48 更新主要内容(石像鬼1.8.0)
 2. 增加一键停止翻墙
