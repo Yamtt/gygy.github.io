@@ -1,3 +1,7 @@
+201500927-V49 V49fix V49fix2 更新主要内容(石像鬼1.8.0)
+1. 细节改善
+2.强制关闭和开启功能 改正
+
 201500925-V48fix1 更新主要内容(石像鬼1.8.0)
 1. 增加刷机，第一次启动的自定义脚本firstsetup。脚本放置 /mnt/sda1/tmp/firstsetup 或/mnt/sda2/tmp/firstsetup 或/mnt/sda3/tmp/firstsetup
    设置了脚本，刷机完成后，会在第一次启动自动执行该脚本内容。大家可以设置ppoe，ss，adbyby，百度云等设置信息。做到刷完机，马上可使用。
