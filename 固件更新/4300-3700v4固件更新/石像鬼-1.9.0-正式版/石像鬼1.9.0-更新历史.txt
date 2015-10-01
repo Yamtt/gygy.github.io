@@ -4,3 +4,9 @@ G1版本，从1.8.0 V49fix4终结版本 转化而来。继承V49fix4终结版本
 2. shadowsocks，chinadns 全部更新到最新版本。配置文件全部更换，支持ss的最新的一些特性。
 3. aria2 更新到1.9.2最新版本，为全功能版本。支持bittorrent 和metalink
 4. mwan3和mwan3-luci 升级到最新版本
+5. 升级adbyby 及 adbyby luci
+6. 处理无法设置为自启动的问题 
+7. 添加自动挂载脚本
+8. 添加刷机后，第一次启动 自定义脚本。
+   自定义脚本 放置在 /mnt/sda1/tmp/firstsetup  （在sda2,或sda3也可以）
+
