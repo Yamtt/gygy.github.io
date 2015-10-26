@@ -5,7 +5,11 @@ luci地址： http://192.168.1.1:8081  （只有luci）
 默认已经开启无线，无线ssid=gargoyle， 密码Gargoyle
 
 
-
+20151026 集成版C2
+去掉colorbox支持，因为colorbox服务器有问题
+增加telnet界面，默认关闭telnet服务
+增加自动挂载功能
+ss使用最新版本
 
 
 
