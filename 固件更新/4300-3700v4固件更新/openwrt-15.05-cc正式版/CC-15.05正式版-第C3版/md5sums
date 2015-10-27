@@ -1,0 +1,17 @@
+364dc3386db354131b9cb5730be01770 *OpenWrt-ImageBuilder-ar71xx-nand.Linux-x86_64.tar.bz2
+01837d503fbdaa4ccd20c61df103f3be *OpenWrt-SDK-ar71xx-nand_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64.tar.bz2
+94686b451f8888c7997127d9b84b7271 *OpenWrt-Toolchain-ar71xx-nand_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64.tar.bz2
+423d04d76c27ff06212c159bed773bf9 *openwrt-ar71xx-nand-root.squashfs
+2379c82df45a5e9d6a6bc4d6d35c4f11 *openwrt-ar71xx-nand-root.squashfs-64k
+293a10cec902ecc94bfe2efad2782f53 *openwrt-ar71xx-nand-uImage-gzip.bin
+1814376c014f2389e2b4b93297e1d695 *openwrt-ar71xx-nand-uImage-lzma.bin
+14a87255b7569b130ad19230c9aa2926 *openwrt-ar71xx-nand-vmlinux-lzma.elf
+dcaf4860d7c86aca30379dc9e22b4a66 *openwrt-ar71xx-nand-vmlinux.bin
+5cd9be247efa8f0b8a2857570eaf0f5e *openwrt-ar71xx-nand-vmlinux.elf
+2d3700c90ffef6112612155bd10d19a0 *openwrt-ar71xx-nand-vmlinux.gz
+180251df6983a75469c809fa42e35982 *openwrt-ar71xx-nand-vmlinux.lzma
+f98c30fc0081cb8a4bb63e7d656578ba *openwrt-ar71xx-nand-wndr3700v4-squashfs-sysupgrade.tar
+bcbf4236987ee116d850c6c4cdd4599d *openwrt-ar71xx-nand-wndr3700v4-ubi-factory.img
+eab281837be82bc77434e83e756ff368 *openwrt-ar71xx-nand-wndr4300-squashfs-sysupgrade.tar
+d206ac1628c3c70e265a313c97c26402 *openwrt-ar71xx-nand-wndr4300-ubi-factory.img
+b75659b487d53c94bb4158c89c6d776c *sha256sums
