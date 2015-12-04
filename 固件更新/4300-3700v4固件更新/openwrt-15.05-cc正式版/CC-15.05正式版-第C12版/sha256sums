@@ -1,0 +1,17 @@
+SHA256(OpenWrt-ImageBuilder-ar71xx-nand.Linux-x86_64.tar.bz2)= 98cc6a83b7357400b497f46bc15129ae94067ac1754050bae142f20ab05df4fc
+SHA256(OpenWrt-SDK-ar71xx-nand_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64.tar.bz2)= c0dff3f381a97d2e08e36d1cb978896eabb7237c28245c5f95d4c041cabc7d0a
+SHA256(OpenWrt-Toolchain-ar71xx-nand_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64.tar.bz2)= 170997f27f89914293fedc35d15f995b452cd3ddd06f659ea1bf7bc8505f8c3e
+SHA256(openwrt-ar71xx-nand-root.squashfs)= 2e741fa3be67fbe7ccd0263133865684550dea8f468533c419aec69da6eafaa2
+SHA256(openwrt-ar71xx-nand-root.squashfs-64k)= 91af6129ee7b1641f29324d2f5d19c82598dd837c5338a283c8b8562c71e5887
+SHA256(openwrt-ar71xx-nand-uImage-gzip.bin)= bf108364d01592c4bfa1a89bd29eae8a401bcdc796fadb484faf23ba8fe8d180
+SHA256(openwrt-ar71xx-nand-uImage-lzma.bin)= afcd8e800ee00558ef95ee35c607c5c259c97ad675865a652e6962b308524bdf
+SHA256(openwrt-ar71xx-nand-vmlinux-lzma.elf)= 90a67b28bada2a495879c36b453c72687fd4ca5c0eae749b2bb522a8c7e7867b
+SHA256(openwrt-ar71xx-nand-vmlinux.bin)= 73230d45072f0ade955e52f82362bdcc51ed1e22d7169bbe26c61bca917a7fbd
+SHA256(openwrt-ar71xx-nand-vmlinux.elf)= 372ff71e8ea53328ddc625fbb7689bdf78c243c5293bb29e02b9aa597c6a85bc
+SHA256(openwrt-ar71xx-nand-vmlinux.gz)= c9e89c749b5460e26f78964bc8f5a0f9cf0df91f298a65bb994e98457ac1fcf8
+SHA256(openwrt-ar71xx-nand-vmlinux.lzma)= 7893a773d45ca0dc0145abf8249d571e66a9f63180eaecd0aa4cff197bd1dccb
+SHA256(openwrt-ar71xx-nand-wndr3700v4-squashfs-sysupgrade.tar)= b6e1281350caaeb95f1563a058cc810b49dd033f778fc843274dbae1c8735367
+SHA256(openwrt-ar71xx-nand-wndr3700v4-ubi-factory.img)= a2d024b20f1946497a17bde076e2093cc3dcda845677f7c0672bbba01627209b
+SHA256(openwrt-ar71xx-nand-wndr4300-squashfs-sysupgrade.tar)= 3524af82af03b505716fd96bc822f5fd87d80fd4c0f55fe695ecf2166e80ac70
+SHA256(openwrt-ar71xx-nand-wndr4300-ubi-factory.img)= dc4f7e223324d7a8208582c85d730010e96f0c9b87f61e35d452bb35903a554e
+SHA256(sha256sums)= e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
