@@ -1,0 +1,24 @@
+重编译版
+
+默认只集成基本软件。只集成下面插件：
+1.luci默认中文。
+2.mg luci-app-ddns luci-app-samba luci-app-wol
+3.主题luci-theme-bootstrap
+4.集成部分简单设置。
+5.其他任何插件（包括ss等等），都通过在线安装的方式 自动化安装。
+
+luci地址：192.168.1.1
+默认无密码
+
+默认无线Gargoyle， 密码Gargoyle
+
+tar可以在openwrt固件下面升级。 不能保留配置文件。
+
+img， 用tftp刷入。
+
+刷觉的方法，参考在线教程.
+
+
+
+
+
