@@ -29,3 +29,17 @@ G1版本，从1.8.0 V53终结版本 转化而来。继承版本 的全部优点�
 1.升级adbyby
 2.升级chinadns,升级ss
 
+20160313-第G6
+注意: 该版本,不能保留配置文件.
+注意: shadowsocks新版本 和 旧版本配置文件差异巨大,不能使用任何旧版本文件.
+1.更新adbyby为最新版本
+2.更新ss为最新版本,更新版本为2.4.5
+3.更新翻墙列表
+4.更新dnsmasq列表
+5.添加ss命令,可一键重启chinadns,ss等服务
+6.修复openvpn命令无法找到的问题
+7.更新luci-app-shadowsocks-spec为最新版本
+8.dnsmasq-full 默认
+9.更新kms luci界面,来自论坛网友.
+10.完善翻墙脚本. 
+
