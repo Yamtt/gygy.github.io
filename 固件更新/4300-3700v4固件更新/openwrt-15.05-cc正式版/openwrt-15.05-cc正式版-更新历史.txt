@@ -90,6 +90,11 @@ ntfs的挂载方式，修改为ufsd
 8.dnsmasq-full 默认
 9.更新kms luci界面,来自论坛网友.
 10.完善翻墙脚本. 
+11.修复led灯的颜色
+12.添加一个漂亮主题material
+13.修复adbyby配置乱码
+14.增加luci-app-adblock 去广告插件
+
 
 
 
