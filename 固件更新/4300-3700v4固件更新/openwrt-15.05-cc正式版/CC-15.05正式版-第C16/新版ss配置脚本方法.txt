@@ -2,13 +2,15 @@ uci set shadowsocks.@servers[0].server='145.78.32.11'
 uci set shadowsocks.@servers[0].server_port='8888'
 uci set shadowsocks.@servers[0].password='1234'
 uci set shadowsocks.@servers[0].encrypt_method='rc4-md5'
+
+#下面的行,一般不用修改
 uci set shadowsocks.@servers[0]=servers
 uci set shadowsocks.@access_control[0].wan_bp_list='/etc/shadowsocks/ignore.list'
 uci set shadowsocks.@shadowsocks[-1].udp_relay='1'
 uci set shadowsocks.@servers[0].alias='ss'
 uci set shadowsocks.@udp_forward[0]=udp_forward
 uci set shadowsocks.@udp_forward[0].tunnel_enable='0'
-uci set shadowsocks.@udp_forward[0].tunnel_port='7913'
+uci set shadowsocks.@udp_forward[0].tunnel_port='7913'  #此端口不用修改
 uci set shadowsocks.@udp_forward[0].tunnel_forward='8.8.4.4:53'
 uci commit shadowsocks
 
