@@ -95,6 +95,7 @@ ntfs的挂载方式，修改为ufsd
 13.修复adbyby配置乱码
 14.增加luci-app-adblock 去广告插件
 15.修复kms不能启用的问题
+16.openvpn使用openssl版本
 
 
 
