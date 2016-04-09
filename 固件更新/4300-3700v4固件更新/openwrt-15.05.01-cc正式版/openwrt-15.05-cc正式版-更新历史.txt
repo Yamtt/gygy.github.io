@@ -107,6 +107,8 @@ ntfs的挂载方式，修改为ufsd
 7.完善一键设置
 8. fix2 修正adbyby一处问题.
 9. fix2 ssr细节完善.
+10.fix4 更新ssr
+11.fix4 修复一处翻墙错误
 
 
 
