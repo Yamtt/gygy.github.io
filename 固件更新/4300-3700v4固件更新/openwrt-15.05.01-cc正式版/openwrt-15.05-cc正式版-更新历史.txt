@@ -109,6 +109,7 @@ ntfs的挂载方式，修改为ufsd
 9. fix2 ssr细节完善.
 10.fix4 更新ssr
 11.fix4 修复一处翻墙错误
+12.fix4 修复ssr和迅雷冲突
 
 
 
