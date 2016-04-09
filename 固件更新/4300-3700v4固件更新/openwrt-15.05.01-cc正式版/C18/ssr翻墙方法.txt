@@ -1,0 +1,16 @@
+1. 使用ssr,就不要启用ss.
+2. ssr翻墙方法,很简单.
+   - 进入 服务-ShadowsocksR
+   - 进入 ShadowsocksR - General Settings
+   - 将
+{
+    "server": "替换成你的服务器ip或域名",
+    "server_port": 端口,
+    "password": "密码",
+    "method": "加密方式",
+    "protocol": "origin",
+    "obfs": "plain",
+    "timeout": 120
+}
+
+3. 保存.
