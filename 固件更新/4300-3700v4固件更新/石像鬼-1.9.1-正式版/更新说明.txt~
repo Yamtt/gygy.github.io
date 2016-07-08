@@ -4,7 +4,5 @@
     支持自行编译及定制：文件
     tar -xpvjf OpenWrt-ImageBuilder-ar71xx_nand-for-linux-x86_64.tar.bz2
     cd OpenWrt-ImageBuilder-ar71xx_nand-for-linux-x86_64/
-    定制方法：
-    make image PROFILE=“WNDR4300” PACKAGES=" kmod-fs-ext4 kmod-fs-vfat kmod-fs-ntfs" 
-    PACKAGES后面写需要集成的插件
+    make info
 
