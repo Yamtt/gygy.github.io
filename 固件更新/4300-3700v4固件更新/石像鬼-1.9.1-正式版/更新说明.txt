@@ -2,7 +2,7 @@
     仅仅修改了overylady的大小 和 添加了版本号，其他都是原生编译。
     完全纯净版本。
     支持自行编译及定制：文件
-    tar -xpvjf OpenWrt-ImageBuilder-ar71xx_nand-for-linux-x86_64.tar.bz2
+    tar -xpvjf OpenWrt-ImageBuilder-ar71xx-nand.Linux-x86_64.tar.bz2
     cd OpenWrt-ImageBuilder-ar71xx_nand-for-linux-x86_64/
     定制方法：
     make image PROFILE=“WNDR4300” PACKAGES=" kmod-fs-ext4 kmod-fs-vfat kmod-fs-ntfs" 
