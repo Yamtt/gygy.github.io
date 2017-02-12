@@ -1,0 +1,13 @@
+SHA256(OpenWrt-ImageBuilder-x86-64.Linux-x86_64.tar.bz2)= 476c62fe75cefa362262d5141a81306bcc9f30c03fa0f1de88e540006fd5732c
+SHA256(OpenWrt-SDK-x86-64_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64.tar.bz2)= 44e878d65f13e85025c6c2752f92322828e97249645973cc254d2a05ab72297b
+SHA256(gargoyle-x86-64-combined-ext4.img.gz)= 78d0506c478bfea1888a3d7e95fbaf0b745fa1eb9d9b43aa10ef4518ce0b0bf7
+SHA256(gargoyle-x86-64-combined-ext4.vdi)= 6fd2ac2f335b2a1cae9b7de16ab8ae7e0a7c2767e1e2b06006f5dcbdc19d863c
+SHA256(gargoyle-x86-64-combined-ext4.vmdk)= 02a4d6a089b35d09245dbe57a2444cadf0b507aaca2f872563fb848de767f67f
+SHA256(gargoyle-x86-64-combined-squashfs.img.gz)= 8aa57d8a73167112b14dd61c6b526c0f6d17d24609b5957dd72933e8a8de569d
+SHA256(gargoyle-x86-64-combined-squashfs.vdi)= 56a02384e87af9ac117214753aa179b7ebcab1e4d7f9137aed08ec41eb895132
+SHA256(gargoyle-x86-64-combined-squashfs.vmdk)= 681f3cb406ea173dbd6975e4de7146e00aebc152b114af32d63156bff31889dd
+SHA256(gargoyle-x86-64-rootfs-ext4.img.gz)= 9c704c58372d4369ece6a39da276e46b42ee8a9d7252ad36d3424cb1c99fdedc
+SHA256(gargoyle-x86-64-rootfs-squashfs.img.gz)= 3e484f13ef1adb811f786a9722a5c4c8c32bad7b8147a7ec962fcb9f7440088b
+SHA256(gargoyle-x86-64-rootfs.tar.gz)= d38e93350382cf3e7f5256c0ebcd82388de5bf3a8f306a0763db6b3174eecb2f
+SHA256(gargoyle-x86-64-vmlinuz)= cfe28eb97954b30f85c4e2f148540ddb749e049e2d074d5091fcbafe3e95329a
+SHA256(sha256sums)= e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
