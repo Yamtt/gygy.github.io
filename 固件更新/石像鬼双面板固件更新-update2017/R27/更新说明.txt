@@ -1,0 +1,4 @@
+1. 增加文件管理器（来源fw867）
+2. ss更新
+3. 细节更新
+4. 更新aria2,transmission UI
